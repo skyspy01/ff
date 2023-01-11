@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> Factorial Using Recursion </title>
+</head>
+<body>
+<?php
+  function fact($n=4)  
+   { 
+  if ($n == 1) 
+   return 1;  
+ else   
+ return ($n * fact($n-1));  
+   }   
+
+  $x = 5; //global variable  
+ $y = fact($x);  
+ echo "The factorial of the number  ".$x.  "  is " .$y;   
+echo "<br>";   $y = fact();   echo "The factorial of the default parameter is " .$y;       ?>
+</body>
+</html>
+
